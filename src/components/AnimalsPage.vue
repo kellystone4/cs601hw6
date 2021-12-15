@@ -1,18 +1,27 @@
 <template>
   <div id="app">
-        <Navbar/>
-     <router-view></router-view>
+ <h1> Welcome to my Animal Image Gallery!</h1>
+        <Dog/>
+        <Cow/>
+        <Cat/>
+        <Duck/>
   </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue'
+import Dog from './Dog.vue'
+import Cow from './Cow.vue'
+import Cat from './Cat.vue'
+import Duck from './Duck.vue'
 
 
 export default {
   name: 'App',
   components: {
-    Navbar,
+    Dog,
+    Cow,
+    Cat,
+    Duck
   }
 }
 </script>
